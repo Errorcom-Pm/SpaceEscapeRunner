@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# Space Escape Runner 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple 2D space-themed endless runner game built with React Native and Expo — created as a beginner learning project, from first "Hello World" screen all the way to a published Android build.
 
-## Get started
+## About the Game
 
-1. Install dependencies
+Pilot a spaceship left and right to dodge falling asteroids. Every asteroid you avoid increases your score. Every few points, your level goes up — and asteroids fall faster. Survive as long as you can and try to beat your personal best!
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Shape-based spaceship and asteroid design (no images used — pure React Native Views)
+- Left/right movement controls with screen boundary limits
+- Continuously falling asteroids with random spawn positions
+- Difficulty that increases with level (faster asteroid fall speed)
+- Collision detection between spaceship and asteroid
+- Game Over screen showing final score and level reached
+- Local high score saved permanently on-device using AsyncStorage
+- Gradient background, starfield, and smooth animations (Animated API)
+- Fully working Restart/Play Again functionality
 
-   ```bash
-   npx expo start
-   ```
+## Built With
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/) (Expo Router)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) for persistent high scores
+- [expo-linear-gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/) for the background
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## How to Run Locally
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone this repository
 ```bash
-npm run reset-project
+   git clone https://github.com/Errorcom-Pm/SpaceEscapeRunner.git
 ```
+2. Navigate into the project folder
+```bash
+   cd SpaceEscapeRunner
+```
+3. Install dependencies
+```bash
+   npm install
+```
+4. Start the development server
+```bash
+   npx expo start
+```
+5. Scan the QR code shown in the terminal using the **Expo Go** app (Android/iOS) to run it on your phone
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Android Build
 
-## Learn more
+This project has also been built into a standalone Android APK using EAS Build, so it can run without Expo Go at all.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Author
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built by [Errorcom-Pm](https://github.com/Errorcom-Pm) as a hands-on React Native / Expo learning project.
